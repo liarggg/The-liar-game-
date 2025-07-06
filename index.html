@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Liars Kings Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="card-shuffle">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <div class="blue-rose-loader"></div>
+            <p class="loader-text">Preparando las cartas...</p>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay" class="mobile-overlay">
+        <div class="mobile-menu">
+            <button id="close-mobile-menu" class="close-btn">✕</button>
+            <nav class="mobile-nav">
+                <a href="#home" class="mobile-nav-link" data-section="home">
+                    <span class="nav-icon">♠</span>
+                    <span>Inicio</span>
+                </a>
+                <a href="presentation.html" class="mobile-nav-link">
+                    <span class="nav-icon">♥</span>
+                    <span>Presentación</span>
+                </a>
+                <a href="#products" class="mobile-nav-link" data-section="products">
+                    <span class="nav-icon">♣</span>
+                    <span>Productos</span>
+                </a>
+                <a href="#contact" class="mobile-nav-link" data-section="contact">
+                    <span class="nav-icon">♦</span>
+                    <span>Contactarnos</span>
+                </a>
+                   
+            </nav>
+        </div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <!-- Logo -->
+            <div class="sidebar-logo">
+                <div class="logo-cards">
+                    <span class="card-symbol rotating">♠</span>
+                    <span class="card-symbol rotating">♥</span>
+                    <span class="card-symbol rotating">♣</span>
+                    <span class="card-symbol rotating">♦</span>
+                </div>
+                <h2 class="logo-text">The Liars<br>Kings</h2>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+                <a href="#home" class="nav-item active" data-section="home">
+                    <span class="nav-icon">♠</span>
+                    <span class="nav-text">Inicio</span>
+                    <div class="nav-glow"></div>
+                </a>
+                <a href="presentation.html" class="nav-item">
+                    <span class="nav-icon">♥</span>
+                    <span class="nav-text">Presentación</span>
+                    <div class="nav-glow"></div>
+                </a>
+                <a href="#products" class="nav-item" data-section="products">
+                    <span class="nav-icon">♣</span>
+                    <span class="nav-text">Productos</span>
+                    <div class="nav-glow"></div>
+                </a>
+                <a href="#contact" class="nav-item" data-section="contact">
+                    <span class="nav-icon">♦</span>
+                    <span class="nav-text">Contactarnos</span>
+                    <div class="nav-glow"></div>
+                </a>
+                
+            </nav>
+
+            <!-- Decorative Elements -->
+            <div class="sidebar-decoration">
+                <div class="blue-rose-decoration"></div>
+                <div class="poker-chips">
+                    <div class="chip"></div>
+                    <div class="chip"></div>
+                    <div class="chip"></div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Animated Background -->
+        <div class="animated-background">
+            <div class="falling-roses"></div>
+            <div class="floating-cards"></div>
+        </div>
+
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="hero-content">
+                <div class="poker-card-display">
+                    <div class="main-card">
+                        <div class="card-face">
+                            <div class="card-corner top-left">
+                                <span class="card-value">A</span>
+                                <span class="card-suit">♠</span>
+                            </div>
+                            <div class="card-center">
+                                <span class="center-suit">♠</span>
+                                <div class="blue-roses-overlay">
+                                    <div class="rose"></div>
+                                    <div class="rose"></div>
+                                    <div class="rose"></div>
+                                </div>
+                            </div>
+                            <div class="card-corner bottom-right">
+                                <span class="card-value">A</span>
+                                <span class="card-suit">♠</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-text">
+                    <h1 class="hero-title">The Liars Kings Shop</h1>
+                    <p class="hero-subtitle">Domina el entretenimiento con The Liars Kings Shop</p>
+                    <p class="hero-description">Donde el entretenimiento premium encuentra su hogar en un ambiente de lujo y sofisticación</p>
+                    <button class="cta-button">
+                        <span>♦ Explorar Productos</span>
+                        <div class="button-shine"></div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section products-section">
+            <div class="section-header">
+                <h2 class="section-title">Nuestras Plataformas Premium</h2>
+                <p class="section-subtitle">Cada suscripción es una carta ganadora en tu mano</p>
+            </div>
+
+            <div class="products-carousel">
+                <!-- Netflix -->
+                <div class="product-card" data-platform="netflix">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon netflix-icon">N</div>
+                            <h3>Netflix Premium</h3>
+                            <p class="price">$250 o $80 <span>/mes</span></p>
+                            <div class="card-suit">♠</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Netflix Premium</h4>
+                            <p>Acceso completo a todo el catálogo de Netflix con calidad 4K y múltiples pantallas</p>
+                            <ul class="features">
+                                <li>✓ Calidad 4K Ultra HD</li>
+                                <li>✓ 4 pantallas simultáneas</li>
+                                <li>✓ Descargas ilimitadas</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="Netflix Premium">
+                                <span>♠ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Disney Plus -->
+                <div class="product-card" data-platform="disney">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon disney-icon">D+</div>
+                            <h3>Disney Plus</h3>
+                            <p class="price">$230 o $80<span>/mes</span></p>
+                            <div class="card-suit">♥</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Disney Plus</h4>
+                            <p>Todo el universo Disney, Marvel, Star Wars y National Geographic</p>
+                            <ul class="features">
+                                <li>✓ Contenido Disney exclusivo</li>
+                                <li>✓ Marvel y Star Wars</li>
+                                <li>✓ 4 dispositivos simultáneos</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="Disney Plus">
+                                <span>♥ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HBO Max -->
+                <div class="product-card" data-platform="hbo">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon hbo-icon">HBO</div>
+                            <h3>HBO Max</h3>
+                            <p class="price">$130 o $50<span>/mes</span></p>
+                            <div class="card-suit">♣</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>HBO Max</h4>
+                            <p>Series exclusivas, películas de estreno y contenido premium</p>
+                            <ul class="features">
+                                <li>✓ Estrenos simultáneos</li>
+                                <li>✓ Series HBO originales</li>
+                                <li>✓ Calidad 4K disponible</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="HBO Max">
+                                <span>♣ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YouTube Premium -->
+                <div class="product-card" data-platform="youtube">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon youtube-icon">YT</div>
+                            <h3>YouTube Premium</h3>
+                            <p class="price">$100 0 $75 <span>/mes</span></p>
+                            <div class="card-suit">♦</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>YouTube Premium</h4>
+                            <p>Sin anuncios, reproducción en segundo plano y YouTube Music</p>
+                            <ul class="features">
+                                <li>✓ Sin anuncios</li>
+                                <li>✓ YouTube Music incluido</li>
+                                <li>✓ Reproducción offline</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="YouTube Premium">
+                                <span>♦ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spotify Premium -->
+                <div class="product-card" data-platform="spotify">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon spotify-icon">♪</div>
+                            <h3>Spotify Premium</h3>
+                            <p class="price">$70<span>/mes</span></p>
+                            <div class="card-suit">♠</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Spotify Premium</h4>
+                            <p>Música sin límites, sin anuncios y con la mejor calidad</p>
+                            <ul class="features">
+                                <li>✓ Sin anuncios</li>
+                                <li>✓ Calidad extrema</li>
+                                <li>✓ Descargas offline</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="Spotify Premium">
+                                <span>♠ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ChatGPT Plus -->
+                <div class="product-card" data-platform="chatgpt">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon chatgpt-icon">AI</div>
+                            <h3>ChatGPT Plus</h3>
+                            <p class="price">$170<span>/mes</span></p>
+                            <div class="card-suit">♥</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>ChatGPT Plus</h4>
+                            <p>Inteligencia artificial avanzada para todas tus necesidades</p>
+                            <ul class="features">
+                                <li>✓ GPT-4 avanzado</li>
+                                <li>✓ Respuestas más rápidas</li>
+                                <li>✓ Acceso prioritario</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="ChatGPT Plus">
+                                <span>♥ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paramount Plus -->
+                <div class="product-card" data-platform="paramount">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon paramount-icon">P+</div>
+                            <h3>Paramount Plus</h3>
+                            <p class="price">$110 o $50<span>/mes</span></p>
+                            <div class="card-suit">♣</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Paramount Plus</h4>
+                            <p>Contenido exclusivo de CBS, MTV, Nickelodeon y más</p>
+                            <ul class="features">
+                                <li>✓ Deportes en vivo</li>
+                                <li>✓ Contenido original</li>
+                                <li>✓ Biblioteca completa CBS</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="Paramount Plus">
+                                <span>♣ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vix Premium -->
+                <div class="product-card" data-platform="vix">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon vix-icon">VIX</div>
+                            <h3>Vix Premium</h3>
+                            <p class="price">$100 o 35<span>/mes</span></p>
+                            <div class="card-suit">♦</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Vix Premium</h4>
+                            <p>El mejor contenido en español y entretenimiento latino</p>
+                            <ul class="features">
+                                <li>✓ Contenido original</li>
+                                <li>✓ Deportes en vivo</li>
+                                <li>✓ Sin anuncios</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="Vix Premium">
+                                <span>♦ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prime Video -->
+                <div class="product-card" data-platform="prime">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon prime-icon">PV</div>
+                            <h3>Prime Video</h3>
+                            <p class="price">$130 o $50<span>/mes</span></p>
+                            <div class="card-suit">♠</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Prime Video</h4>
+                            <p>Series y películas originales de Amazon con envío gratis</p>
+                            <ul class="features">
+                                <li>✓ Contenido Amazon Original</li>
+                                <li>✓ Beneficios Prime</li>
+                                <li>✓ Alquiler de películas</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="Prime Video">
+                                <span>♠ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apple TV Plus -->
+                <div class="product-card" data-platform="appletv">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon appletv-icon">TV+</div>
+                            <h3>Apple TV Plus</h3>
+                            <p class="price">$70<span>/mes</span></p>
+                            <div class="card-suit">♥</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Apple TV Plus</h4>
+                            <p>Contenido original de Apple con calidad cinematográfica</p>
+                            <ul class="features">
+                                <li>✓ Producciones originales</li>
+                                <li>✓ Calidad 4K HDR</li>
+                                <li>✓ Sin anuncios</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="Apple TV Plus">
+                                <span>♥ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plex Pass -->
+                <div class="product-card" data-platform="plex">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon plex-icon">PLEX</div>
+                            <h3>Plex Pass</h3>
+                            <p class="price">$120 o $50<span>/mes</span></p>
+                            <div class="card-suit">♣</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Plex Pass</h4>
+                            <p>Organiza y transmite tu colección de medios personal</p>
+                            <ul class="features">
+                                <li>✓ Streaming personal</li>
+                                <li>✓ Funciones premium</li>
+                                <li>✓ Acceso móvil</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="Plex Pass">
+                                <span>♣ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duolingo Plus -->
+                <div class="product-card" data-platform="duolingo">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon duolingo-icon">DUO</div>
+                            <h3>Duolingo Plus</h3>
+                            <p class="price">$50<span>/mes</span></p>
+                            <div class="card-suit">♦</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Duolingo Plus</h4>
+                            <p>Aprende idiomas sin anuncios con funciones premium</p>
+                            <ul class="features">
+                                <li>✓ Sin anuncios</li>
+                                <li>✓ Descargas offline</li>
+                                <li>✓ Vidas ilimitadas</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="Duolingo Plus">
+                                <span>♦ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crunchyroll Premium -->
+                <div class="product-card" data-platform="crunchyroll">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon crunchyroll-icon">CR</div>
+                            <h3>Crunchyroll Premium</h3>
+                            <p class="price">$120 o 40<span>/mes</span></p>
+                            <div class="card-suit">♠</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Crunchyroll Premium</h4>
+                            <p>El mejor anime y manga con acceso premium</p>
+                            <ul class="features">
+                                <li>✓ Sin anuncios</li>
+                                <li>✓ Simulcast</li>
+                                <li>✓ Calidad HD</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="Crunchyroll Premium">
+                                <span>♠ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Canva Pro -->
+                <div class="product-card" data-platform="canva">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="platform-icon canva-icon">CV</div>
+                            <h3>Canva Pro</h3>
+                            <p class="price">$55<span>/mes</span></p>
+                            <div class="card-suit">♥</div>
+                        </div>
+                        <div class="card-back">
+                            <h4>Canva Pro</h4>
+                            <p>Herramientas de diseño profesional con elementos premium</p>
+                            <ul class="features">
+                                <li>✓ Elementos premium</li>
+                                <li>✓ Plantillas exclusivas</li>
+                                <li>✓ Colaboración en equipo</li>
+                            </ul>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="buy-button" data-platform="Canva Pro">
+                                <span>♥ Comprar Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Methods Section -->
+            <div class="payment-methods-section">
+                <div class="section-header">
+                    <h3 class="payment-title">Métodos de Pago Disponibles</h3>
+                    <p class="payment-subtitle">Elige tu método de pago preferido para completar tu compra</p>
+                </div>
+                
+                <div class="payment-methods-grid">
+                    <div class="payment-method-card">
+                        <div class="payment-icon-container">
+                            <div class="payment-icon bank-icon">🏦</div>
+                            <div class="card-decoration">♠</div>
+                        </div>
+                        <h4>Transferencia Bancaria</h4>
+                        <p>Pago seguro directo desde tu cuenta bancaria</p>
+                        <ul class="payment-features">
+                            <li>✓ Procesamiento inmediato</li>
+                            <li>✓ Sin comisiones adicionales</li>
+                            <li>✓ Máxima seguridad</li>
+                        </ul>
+                        <div class="payment-glow"></div>
+                    </div>
+
+                    <div class="payment-method-card">
+                        <div class="payment-icon-container">
+                            <div class="payment-icon paypal-icon">💳</div>
+                            <div class="card-decoration">♥</div>
+                        </div>
+                        <h4>PayPal</h4>
+                        <p>Pago rápido y seguro con tu cuenta PayPal</p>
+                        <ul class="payment-features">
+                            <li>✓ Protección del comprador</li>
+                            <li>✓ Pago en un clic</li>
+                            <li>✓ Aceptado mundialmente</li>
+                        </ul>
+                        <div class="payment-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <h2 class="section-title">Contactarnos</h2>
+                <p class="section-subtitle">Estamos aquí para ayudarte a encontrar tu entretenimiento perfecto</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Nombre Completo</label>
+                            <div class="form-decoration">♠</div>
+                            <div class="input-glow"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Correo Electrónico</label>
+                            <div class="form-decoration">♥</div>
+                            <div class="input-glow"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" required rows="5"></textarea>
+                            <label for="message">Mensaje</label>
+                            <div class="form-decoration">♣</div>
+                            <div class="input-glow"></div>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">
+                            <span>♦ Enviar Mensaje</span>
+                            <div class="button-shine"></div>
+                        </button>
+                    </form>
+
+                    <!-- WhatsApp Contact Buttons -->
+                    <div class="whatsapp-contact-section">
+                        <h4>Contacto Directo</h4>
+                        <div class="whatsapp-buttons">
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="whatsapp-button support">
+                                <span>💬 Contactar Soporte</span>
+                            </a>
+                            <a href="https://wa.me/message/ITBVDW727VKLD1" class="whatsapp-button report">
+                                <span>🚨 Reportar Problema</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>The Liars Kings HQ</h3>
+                        <div class="contact-detail">
+                            <span class="detail-icon">♠</span>
+                            <p>Casino District, Entertainment City</p>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-icon">♥</span>
+                            <p>renatodejesusavila@gmail.com</p>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-icon">♣</span>
+                            <p>+52 (4774815112) KINGS-01</p>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-icon">♦</span>
+                            <p>Soporte 24/7 disponible</p>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <div class="stylized-map">
+                            <div class="map-marker">
+                                <span class="marker-icon">♠</span>
+                                <div class="marker-pulse"></div>
+                            </div>
+                            <div class="map-grid"></div>
+                            <div class="map-decoration">
+                                <div class="rose-marker"></div>
+                                <div class="rose-marker"></div>
+                                <div class="rose-marker"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-animation">
+                    <span class="card-symbol rotating">♠</span>
+                    <span class="card-symbol rotating">♥</span>
+                    <span class="card-symbol rotating">♣</span>
+                    <span class="card-symbol rotating">♦</span>
+                </div>
+                <span class="footer-brand">The Liars Kings Shop</span>
+            </div>
+            
+            <div class="footer-links">
+                <div class="social-links">
+                    <a href="https://wa.me/message/ITBVDW727VKLD1" class="social-link" title="WhatsApp">
+                        <span>📧</span>
+                        <div class="social-glow"></div>
+                    </a>
+                    <a href="https://wa.me/message/ITBVDW727VKLD1" class="social-link" title="Contacto">
+                        <span>📱</span>
+                        <div class="social-glow"></div>
+                    </a>
+                    <a href="https://wa.me/message/ITBVDW727VKLD1" class="social-link" title="Chat">
+                        <span>💬</span>
+                        <div class="social-glow"></div>
+                    </a>
+                    <a href="https://wa.me/message/ITBVDW727VKLD1" class="social-link" title="Soporte">
+                        <span>🎯</span>
+                        <div class="social-glow"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Liars Kings Shop. Todos los derechos reservados.</p>
+            <p class="footer-tagline">Donde el entretenimiento premium encuentra su hogar</p>
+        </div>
+    </footer>
+
+    <!-- Floating Chat Button -->
+    <div class="floating-chat">
+        <button class="chat-button" title="Soporte al Cliente">
+            <span class="joker-icon">🃏</span>
+            <div class="chat-pulse"></div>
+        </button>
+        <div class="chat-popup">
+            <div class="chat-header">
+                <h4>Soporte VIP</h4>
+                <button class="chat-close">✕</button>
+            </div>
+            <div class="chat-body">
+                <p>¿En qué podemos ayudarte hoy?</p>
+                <div class="chat-options">
+                    <a href="https://wa.me/message/ITBVDW727VKLD1" class="chat-option">💳 Contactar Soporte</a>
+                    <a href="https://wa.me/message/ITBVDW727VKLD1" class="chat-option">🎯 Reportar Problema</a>
+                    <a href="#products" class="chat-option">👑 Ver Productos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
