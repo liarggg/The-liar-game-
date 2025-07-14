@@ -307,7 +307,7 @@ body {
 .nav-item.active {
     background: rgba(212, 175, 55, 0.1);
     border-color: var(--gold);
-    transform: translateX(10px);
+    transform: translateX(10px) perspective(500px) rotateY(5deg);
     box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
 }
 
@@ -854,7 +854,7 @@ body {
 }
 
 .product-card:hover .card-inner {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) rotateZ(5deg) scale(1.05);
 }
 
 .card-front,
@@ -1210,6 +1210,7 @@ body {
     border-color: var(--gold);
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
     background: rgba(26, 26, 46, 0.8);
+    transform: translateY(-5px) scale(1.02);
 }
 
 .form-group label {
@@ -1293,7 +1294,7 @@ body {
 }
 
 .submit-button:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px) scale(1.05) rotateX(10deg);
     box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
 }
 

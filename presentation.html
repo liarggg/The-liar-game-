@@ -248,6 +248,25 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Agency Presentation Section -->
+                <div class="agency-presentation-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Nuestra Agencia</h2>
+                        <p class="section-subtitle">Conoce al equipo detrás de la magia</p>
+                    </div>
+                    <div class="agency-content">
+                        <div class="agency-text">
+                            <h3>La Mente Maestra</h3>
+                            <p>The Liars Kings Shop fue fundada por un equipo de apasionados del entretenimiento y la tecnología, con la visión de crear una experiencia única y exclusiva para los amantes del streaming. Nuestro equipo está compuesto por expertos en la industria, dedicados a brindarte el mejor servicio y las mejores ofertas del mercado.</p>
+                            <h3>Nuestra Filosofía</h3>
+                            <p>Creemos en la honestidad, la transparencia y la excelencia. Como en un juego de póker, jugamos nuestras cartas de frente, ofreciendo precios justos y un servicio al cliente inigualable. Nuestra meta es que te sientas como un rey, con acceso a todo el entretenimiento que deseas, sin complicaciones.</p>
+                        </div>
+                        <div class="agency-image">
+                            <img src="https://via.placeholder.com/500x300" alt="Equipo de The Liars Kings Shop">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -623,6 +642,50 @@
             
             .cta-button.secondary:hover {
                 box-shadow: 0 15px 40px rgba(65, 105, 225, 0.4);
+            }
+
+            .agency-presentation-section {
+                margin-top: 100px;
+                padding: 80px 40px;
+                background: rgba(10, 10, 10, 0.5);
+                border-radius: 30px;
+                border: 2px solid var(--gold);
+            }
+
+            .agency-content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+                align-items: center;
+                margin-top: 60px;
+            }
+
+            .agency-text h3 {
+                font-family: 'Playfair Display', serif;
+                font-size: 28px;
+                color: var(--gold);
+                margin-bottom: 20px;
+            }
+
+            .agency-text p {
+                font-size: 18px;
+                color: var(--text-light);
+                opacity: 0.9;
+                line-height: 1.7;
+                margin-bottom: 25px;
+            }
+
+            .agency-image img {
+                width: 100%;
+                border-radius: 20px;
+                border: 3px solid var(--gold);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .agency-image img:hover {
+                transform: scale(1.05) rotateZ(3deg);
+                box-shadow: 0 20px 40px rgba(212, 175, 55, 0.4);
             }
             
             @media (max-width: 1024px) {
